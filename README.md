@@ -1,5 +1,12 @@
-EggyGoodness
-============
+##Welcome to Eggy Goodness!
+
+**LATEST VERSION**:
+
+[EggyGoodness 1.0 for MC 1.6.4](http://www.hatchling.org/eggygoodness/eggygoodness-1.6.4-1.0.0.965.jar)
+
+[EggyGoodness 1.0 for MC 1.7.2](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.2-1.0.0.1024.jar)
+
+[Minecraft Forums page](http://www.minecraftforum.net/topic/2398251-164172forge-eggy-goodness/)
 
 My very first attempt at modding minecraft. Just a smelting recipe for turning eggs into edible baked eggs.
 
