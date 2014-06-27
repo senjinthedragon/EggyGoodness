@@ -82,13 +82,13 @@ Git is used to clone EggyGoodness and update your local copy.
 This section assumes that you're using the command-line version of Git.
 
 1. Open up your command line.
-2. Navigate to a place where you want to download EggyGoodness's source (eg `C:\Github\Eggy Goodness\`) by executing `cd [folder location]`.  This location is known as `mcdev` from now on.
+2. Navigate to a place where you want to download EggyGoodness's source (eg `C:\Github\EggyGoodness\`) by executing `cd [folder location]`.  This location is known as `mcdev` from now on.
 3. Execute `git clone https://github.com/senjinthedragon/EggyGoodness.git`.  This will download EggyGoodness's source into `mcdev`.
 4. Right now, you should have a directory that looks something like:
 
 ***
 	mcdev
-	\-Eggy Goodness
+	\-EggyGoodness
 		\-EggyGoodness's files (should have `build.gradle`)
 ***
 
@@ -97,7 +97,7 @@ This section assumes that you're using the command-line version of Git.
 	* You will generally only have to do this once until the Forge version in `build.properties` changes.
 2. Execute `gradle build`. If you did everything right, `BUILD SUCCESSFUL` will be displayed after it finishes.  This should be relatively quick.
     * If you see `BUILD FAILED`, check the error output (it should be right around `BUILD FAILED`), fix everything (if possible), and try again.
-3. Navigate to `mcdev\Eggy Goodness\build\libs`.
+3. Navigate to `mcdev\EggyGoodness\build\libs`.
     *  You should see a `.jar` file named `EggyGoodness-1.7.2-1.0.jar`.
 4. Copy the jar into your Minecraft mods folder, and you are done!
 
