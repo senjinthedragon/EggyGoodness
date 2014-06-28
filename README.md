@@ -2,9 +2,11 @@
 
 **LATEST VERSION**:
 
-[EggyGoodness 1.0 for MC 1.6.4](http://www.hatchling.org/eggygoodness/eggygoodness-1.6.4-1.0.0.965.jar)
+[EggyGoodness 1.0 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.0.jar)
 
 [EggyGoodness 1.0 for MC 1.7.2](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.2-1.0.0.1024.jar)
+
+[EggyGoodness 1.0 for MC 1.6.4](http://www.hatchling.org/eggygoodness/eggygoodness-1.6.4-1.0.0.965.jar)
 
 [Minecraft Forums page](http://www.minecraftforum.net/topic/2398251-164172forge-eggy-goodness/)
 
@@ -98,7 +100,7 @@ This section assumes that you're using the command-line version of Git.
 2. Execute `gradle build`. If you did everything right, `BUILD SUCCESSFUL` will be displayed after it finishes.  This should be relatively quick.
     * If you see `BUILD FAILED`, check the error output (it should be right around `BUILD FAILED`), fix everything (if possible), and try again.
 3. Navigate to `mcdev\EggyGoodness\build\libs`.
-    *  You should see a `.jar` file named `EggyGoodness-1.7.2-1.0.jar`.
+    *  You should see a `.jar` file named `EggyGoodness-1.7.10-1.0.jar`.
 4. Copy the jar into your Minecraft mods folder, and you are done!
 
 ####Updating Your Repository
