@@ -2,7 +2,10 @@
 
 **LATEST VERSION**:
 
-[EggyGoodness 1.1 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.1.jar) (WIP)
+[EggyGoodness 1.1 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.1.jar)
+
+
+**OLDER VERSIONS**:
 
 [EggyGoodness 1.0 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.0.jar)
 
@@ -19,7 +22,9 @@
 
 [Contributing](#contributing) - For those that want to help out.
 
-My very first attempt at modding minecraft. Just a smelting recipe for turning eggs into edible baked eggs.
+My very first attempt at modding minecraft. Just a smelting recipe for turning eggs into edible fried eggs.
+
+From version 1.1 onward you can do more then just fry them. Boiled soft and hard and even scrambled are possible now as well.
 
 The original files for this mod never made it onto github and I wanted to add them as well as rewrite them a tiny little
 bit to be more compliant with the forge framework standards. Although I know how to program in quite a few languages, I
@@ -33,12 +38,13 @@ Changed mechanics/recipes:
 * Break an egg by equipping it and left clicking on a block with it.
 * The resulting raw egg can be eaten. You also get the shell in the form of bonemeal.
 * The raw egg can be cooked in a furnace to become a fried egg.
-* Eating fried eggs gives a little bit more health and saturation then raw eggs.
 * Putting a whole egg in a furnace now gives you an unpeeled soft boiled egg.
 * Putting an unpeeled soft boiled egg in a furnace gives you an unpeeled hard boiled egg.
 * Unpeeled eggs can be peeled by left clicking with them on a block to break the shell.
 * Combining a raw egg with a bowl gives you raw scrambled egg. Which you can eat directly or...
 * Raw scrambled egg in a furnace makes scrambled eggs.
+* Differently processed eggs satisfy your hunger in different ways. Some also saturate you more then others.
+* Wolves and dogs like processed eggs too!
 
 ###Compiling Eggy Goodness
 IMPORTANT: Please report any issues you have, there might be some problems with the documentation!
