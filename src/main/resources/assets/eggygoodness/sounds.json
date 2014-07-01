@@ -1,3 +1,4 @@
 {
-    "egg_crack": {"category": "master", "sounds": [{"name" : "egg_crack", "stream": false}]}
+    "egg_crack": {"category": "master", "sounds": [{"name" : "egg_crack", "stream": false}]},
+    "egg_peel": {"category": "master", "sounds": [{"name" : "egg_peel", "stream": false}]}
 }
