@@ -28,15 +28,17 @@ never coded in java before. It's a learning experience for me.
 ###Changelog
 Version 1.1
 
-Changed mechanics:
+Changed mechanics/recipes:
 
 * Break an egg by equipping it and left clicking on a block with it.
-
 * The resulting raw egg can be eaten. You also get the shell in the form of bonemeal.
-
 * The raw egg can be cooked in a furnace to become a fried egg.
-
 * Eating fried eggs gives a little bit more health and saturation then raw eggs.
+* Putting a whole egg in a furnace now gives you an unpeeled soft boiled egg.
+* Putting an unpeeled soft boiled egg in a furnace gives you an unpeeled hard boiled egg.
+* Unpeeled eggs can be peeled by left clicking with them on a block to break the shell.
+* Combining a raw egg with a bowl gives you raw scrambled egg. Which you can eat directly or...
+* Raw scrambled egg in a furnace makes scrambled eggs.
 
 ###Compiling Eggy Goodness
 IMPORTANT: Please report any issues you have, there might be some problems with the documentation!

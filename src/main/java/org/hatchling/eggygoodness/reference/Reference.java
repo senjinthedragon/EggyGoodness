@@ -1,5 +1,6 @@
 package org.hatchling.eggygoodness.reference;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 
 public class Reference
@@ -10,6 +11,12 @@ public class Reference
     public static final String SERVER_PROXY_CLASS = "org.hatchling.eggygoodness.proxy.ServerProxy";
     public static final String CLIENT_PROXY_CLASS = "org.hatchling.eggygoodness.proxy.ClientProxy";
 
-    public static ItemFood bakedEgg;
     public static ItemFood rawEgg;
+    public static ItemFood bakedEgg;
+    public static Item unpeeledSoftBoiledEgg;
+    public static ItemFood softBoiledEgg;
+    public static Item unpeeledHardBoiledEgg;
+    public static ItemFood hardBoiledEgg;
+    public static ItemFood rawScrambledEgg;
+    public static ItemFood scrambledEgg;
 }

@@ -1,2 +1,8 @@
 item.bakedEgg.name=Fried Egg
 item.rawEgg.name=Raw Egg
+item.unpeeledSoftBoiledEgg.name=Unpeeled Soft Boiled Egg
+item.softBoiledEgg.name=Soft Boiled Egg
+item.unpeeledHardBoiledEgg.name=Unpeeled Hard Boiled Egg
+item.hardBoiledEgg.name=Hard Boiled Egg
+item.rawScrambledEgg.name=Raw Scrambled Egg
+item.scrambledEgg.name=Scrambled Egg
