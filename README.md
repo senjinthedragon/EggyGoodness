@@ -10,6 +10,9 @@
 
 [EggyGoodness 1.0 for MC 1.6.4](http://www.hatchling.org/eggygoodness/eggygoodness-1.6.4-1.0.0.965.jar)
 
+
+**OTHER LINKS**:
+
 [Minecraft Forums page](http://www.minecraftforum.net/topic/2398251-164172forge-eggy-goodness/)
 
 [Compiling EggyGoodness](#compiling-eggy-goodness) - For those that want the latest unreleased features.
