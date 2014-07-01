@@ -22,7 +22,7 @@ group= "org.hatchling.eggygoodness" // http://maven.apache.org/guides/mini/guide
 archivesBaseName = "EggyGoodness"
 
 minecraft {
-    version = "1.7.10-10.13.0.1152"
+    version = "1.7.10-10.13.0.1159"
     assetDir = "run/assets"
 }
 
