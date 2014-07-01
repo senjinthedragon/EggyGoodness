@@ -4,6 +4,7 @@
 
 [EggyGoodness 1.1 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.1.jar)
 
+[EggyGoodness 1.1 for MC 1.7.2](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.2-1.1.jar)
 
 **OLDER VERSIONS**:
 
