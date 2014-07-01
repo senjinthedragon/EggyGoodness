@@ -40,8 +40,8 @@ public class EventHookContainer
                     player.inventory.setInventorySlotContents(player.inventory.currentItem, null);
                 }
                 player.getEntityWorld().playSoundEffect(player.posX + 0.5D, player.posY + 0.5D, player.posZ + 0.5D, "eggygoodness:egg_crack", 1.0F, player.getEntityWorld().rand.nextFloat() * 0.1F + 0.9F);
-                player.inventory.addItemStackToInventory(boneMeal);
-                player.inventory.addItemStackToInventory(rawEgg);
+                if(!player.inventory.addItemStackToInventory(boneMeal)) player.entityDropItem(boneMeal, player.getEyeHeight() + 0.5f);
+                if(!player.inventory.addItemStackToInventory(rawEgg)) player.entityDropItem(rawEgg, player.getEyeHeight() + 0.5f);
                 event.setCanceled(true);
             }
         }
