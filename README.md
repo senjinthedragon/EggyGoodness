@@ -12,14 +12,15 @@
 
 [Minecraft Forums page](http://www.minecraftforum.net/topic/2398251-164172forge-eggy-goodness/)
 
+[Compiling EggyGoodness](#compiling-eggy-goodness) - For those that want the latest unreleased features.
+
+[Contributing](#contributing) - For those that want to help out.
+
 My very first attempt at modding minecraft. Just a smelting recipe for turning eggs into edible baked eggs.
 
 The original files for this mod never made it onto github and I wanted to add them as well as rewrite them a tiny little
 bit to be more compliant with the forge framework standards. Although I know how to program in quite a few languages, I
 never coded in java before. It's a learning experience for me.
-
-
-***
 
 ###Changelog
 Version 1.1
@@ -33,13 +34,6 @@ Changed mechanics:
 * The raw egg can be cooked in a furnace to become a fried egg.
 
 * Eating fried eggs gives a little bit more health and saturation then raw eggs.
-
- 
-***
-
-[Compiling EggyGoodness](#compiling-eggy-goodness) - For those that want the latest unreleased features.
-
-[Contributing](#contributing) - For those that want to help out.
 
 ###Compiling Eggy Goodness
 IMPORTANT: Please report any issues you have, there might be some problems with the documentation!
