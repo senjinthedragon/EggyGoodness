@@ -2,6 +2,8 @@
 
 **LATEST VERSION**:
 
+[EggyGoodness 1.1 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.1.jar)
+
 [EggyGoodness 1.0 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.0.jar)
 
 [EggyGoodness 1.0 for MC 1.7.2](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.2-1.0.0.1024.jar)
@@ -15,7 +17,26 @@ My very first attempt at modding minecraft. Just a smelting recipe for turning e
 The original files for this mod never made it onto github and I wanted to add them as well as rewrite them a tiny little
 bit to be more compliant with the forge framework standards. Although I know how to program in quite a few languages, I
 never coded in java before. It's a learning experience for me.
+
+
 ***
+
+###Changelog
+Version 1.1
+
+Changed mechanics:
+
+* Break an egg by equipping it and left clicking on a block with it.
+
+* The resulting raw egg can be eaten. You also get the shell in the form of bonemeal.
+
+* The raw egg can be cooked in a furnace to become a fried egg.
+
+* Eating fried eggs gives a little bit more health and saturation then raw eggs.
+
+ 
+***
+
 [Compiling EggyGoodness](#compiling-eggy-goodness) - For those that want the latest unreleased features.
 
 [Contributing](#contributing) - For those that want to help out.
