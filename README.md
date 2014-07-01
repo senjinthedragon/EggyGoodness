@@ -2,7 +2,7 @@
 
 **LATEST VERSION**:
 
-[EggyGoodness 1.1 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.1.jar)
+[EggyGoodness 1.1 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.1.jar) (WIP)
 
 [EggyGoodness 1.0 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.0.jar)
 
