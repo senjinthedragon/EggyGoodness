@@ -4,5 +4,5 @@ item.eggygoodness:rawEgg.name=Raw Egg
 item.eggygoodness:rawScrambledEgg.name=Raw Scrambled Egg
 item.eggygoodness:scrambledEgg.name=Scrambled Egg
 item.eggygoodness:softBoiledEgg.name=Soft Boiled Egg
-item.eggygoodness:unpeeledHardBoiledEgg.name=Hard Boiled Egg (unpeeled)
-item.eggygoodness:unpeeledSoftBoiledEgg.name=Soft Boiled Egg (unpeeled)
+item.eggygoodness:unpeeledHardBoiledEgg.name=Unpeeled Hard Boiled Egg
+item.eggygoodness:unpeeledSoftBoiledEgg.name=Unpeeled Soft Boiled Egg
