@@ -1,18 +1,19 @@
-package org.hatchling.eggygoodness.items;
+package org.hatchling.eggygoodness.item;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ItemFoodBowl extends ItemFood
+public class ItemFoodBowl extends ItemFoodEggyGoodness
 {
-    public ItemFoodBowl(int p_i45330_1_)
+    public ItemFoodBowl(int healAmount, float saturationModifier, boolean isWolfsFavouriteMeat)
     {
-        super(p_i45330_1_, true);
+        super(healAmount, saturationModifier, isWolfsFavouriteMeat);
+        this.setMaxStackSize(1);
     }
 
+    @Override
     public ItemStack onEaten(ItemStack p_77654_1_, World p_77654_2_, EntityPlayer p_77654_3_)
     {
         if(!p_77654_3_.inventory.addItemStackToInventory(new ItemStack(Items.bowl))) p_77654_3_.entityDropItem(new ItemStack(Items.bowl), p_77654_3_.getEyeHeight());
