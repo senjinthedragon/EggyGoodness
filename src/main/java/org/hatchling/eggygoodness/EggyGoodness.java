@@ -11,6 +11,7 @@ import org.hatchling.eggygoodness.init.ModItems;
 import org.hatchling.eggygoodness.init.ModRecipes;
 import org.hatchling.eggygoodness.proxy.IProxy;
 import org.hatchling.eggygoodness.reference.Reference;
+import org.hatchling.eggygoodness.utility.LogHelper;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class EggyGoodness
@@ -25,6 +26,7 @@ public class EggyGoodness
     public void preInit(FMLPreInitializationEvent event)
     {
         ModItems.init();
+        LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler
@@ -32,11 +34,12 @@ public class EggyGoodness
     {
         ModRecipes.init();
         MinecraftForge.EVENT_BUS.register(new EventHookContainer());
+        LogHelper.info("Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
+        LogHelper.info("Post Initialization Complete!");
     }
 }

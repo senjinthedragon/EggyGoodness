@@ -5,6 +5,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import org.hatchling.eggygoodness.creativetab.CreativeTabEggyGoodness;
 import org.hatchling.eggygoodness.reference.Reference;
 
 public class ItemEggyGoodness extends Item
@@ -12,6 +13,7 @@ public class ItemEggyGoodness extends Item
     public ItemEggyGoodness()
     {
         super();
+        this.setCreativeTab(CreativeTabEggyGoodness.EggyGoodness_TAB);
     }
 
     @Override

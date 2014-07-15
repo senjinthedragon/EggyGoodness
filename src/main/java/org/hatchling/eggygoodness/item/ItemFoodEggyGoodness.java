@@ -5,6 +5,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import org.hatchling.eggygoodness.creativetab.CreativeTabEggyGoodness;
 import org.hatchling.eggygoodness.reference.Reference;
 
 public class ItemFoodEggyGoodness extends ItemFood
@@ -12,6 +13,7 @@ public class ItemFoodEggyGoodness extends ItemFood
     public ItemFoodEggyGoodness(int healAmount, float saturationModifier, boolean isWolfsFavouriteMeat)
     {
         super(healAmount, saturationModifier, isWolfsFavouriteMeat);
+        this.setCreativeTab(CreativeTabEggyGoodness.EggyGoodness_TAB);
     }
 
     @Override

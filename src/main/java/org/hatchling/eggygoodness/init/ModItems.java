@@ -2,7 +2,9 @@ package org.hatchling.eggygoodness.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import org.hatchling.eggygoodness.item.*;
+import org.hatchling.eggygoodness.reference.Reference;
 
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
     public static final ItemFoodEggyGoodness friedEgg = new ItemFriedEgg();
     public static final ItemFoodEggyGoodness hardBoiledEgg = new ItemHardBoiledEgg();

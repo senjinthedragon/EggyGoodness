@@ -12,7 +12,6 @@ public class ItemUnpeeledSoftBoiledEgg extends ItemEggyGoodness
         super();
         this.setUnlocalizedName("unpeeledSoftBoiledEgg");
         this.setMaxStackSize(16);
-        this.setCreativeTab(CreativeTabs.tabFood);
     }
 
     @Override
