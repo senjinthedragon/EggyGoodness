@@ -2,11 +2,13 @@
 
 **LATEST VERSION**:
 
+[EggyGoodness 1.2 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.2.jar)
+
+**OLDER VERSIONS**:
+
 [EggyGoodness 1.1 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.1.jar)
 
 [EggyGoodness 1.1 for MC 1.7.2](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.2-1.1.jar)
-
-**OLDER VERSIONS**:
 
 [EggyGoodness 1.0 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.0.jar)
 
@@ -32,6 +34,19 @@ bit to be more compliant with the forge framework standards. Although I know how
 never coded in java before. It's a learning experience for me.
 
 ###Changelog
+Version 1.2
+
+* WARNING: If you are updating, your Eggy Goodness Eggs will be removed from the world. (Sorry)
+* Client / Server SMP support! The mod will be universal from now on.
+* Cake and Pumpkin Pie are now made with Raw Egg.
+* Configuration file with option to toggle overwriting of vanilla Cake and Pumpkin Pie recipes.
+* In-Game Mod Configuration GUI
+* Mod items now adhere to more logical max stacksizes.
+* Eggy Goodness Creative Tab
+* Various internal framework changes. Logfile support, Vanilla recipe removal, Configuration file support etc.
+* BUGFIX: Items don't duplicate anymore when you break or peel an egg but have no inventory space.
+* BUGFIX: Reorganized the mod internally. Items now register under the correct name.
+
 Version 1.1
 
 Changed mechanics/recipes:
@@ -46,6 +61,9 @@ Changed mechanics/recipes:
 * Raw scrambled egg in a furnace makes scrambled eggs.
 * Differently processed eggs satisfy your hunger in different ways. Some also saturate you more then others.
 * Wolves and dogs like processed eggs too!
+
+Version 1.0
+* The original mod where you could simply bake an egg by sticking it in a fueled furnace.
 
 ###Compiling Eggy Goodness
 IMPORTANT: Please report any issues you have, there might be some problems with the documentation!
