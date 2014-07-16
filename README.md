@@ -39,7 +39,7 @@ Version 1.3
 * Added Egg Sandwich
 * There's a small chance of Double-Yolk eggs when you break an egg. (Double Food, Double Saturation)
 * Changed the Scrambled Egg texture
-* BUGFIX: Raw Eggs no longer interfere with interface colors. 
+* BUGFIX: Opacity removed from Raw Eggs 
 
 Version 1.2
 
