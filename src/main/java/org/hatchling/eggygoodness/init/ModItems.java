@@ -17,6 +17,8 @@ public class ModItems {
     public static final ItemFoodEggyGoodness softBoiledEgg = new ItemSoftBoiledEgg();
     public static final ItemEggyGoodness unpeeledHardBoiledEgg = new ItemUnpeeledHardBoiledEgg();
     public static final ItemEggyGoodness unpeeledSoftBoiledEgg = new ItemUnpeeledSoftBoiledEgg();
+    public static final ItemEggyGoodness diamondGoldenEgg = new ItemDiamondGoldenEgg();
+    public static final ItemEggyGoodness emeraldGoldenEgg = new ItemEmeraldGoldenEgg();
 
     public static void init()
     {
@@ -31,5 +33,7 @@ public class ModItems {
         GameRegistry.registerItem(softBoiledEgg, "softBoiledEgg");
         GameRegistry.registerItem(unpeeledHardBoiledEgg, "unpeeledHardBoiledEgg");
         GameRegistry.registerItem(unpeeledSoftBoiledEgg, "unpeeledSoftBoiledEgg");
+        GameRegistry.registerItem(diamondGoldenEgg, "diamondGoldenEgg");
+        GameRegistry.registerItem(emeraldGoldenEgg, "emeraldGoldenEgg");
     }
 }

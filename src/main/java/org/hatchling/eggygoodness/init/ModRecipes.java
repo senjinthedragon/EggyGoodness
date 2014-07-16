@@ -25,6 +25,12 @@ public class ModRecipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawDoubleYolkEgg), new ItemStack(Items.bowl));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggSandwich), new ItemStack(ModItems.hardBoiledEgg), new ItemStack(Items.bread));
 
+        // Shaped Recipes
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.diamondGoldenEgg), "ABA", "BCB", "ABA", 'A', Items.gold_ingot, 'B', Items.diamond, 'C', Items.egg);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.diamondGoldenEgg), "BAB", "ACA", "BAB", 'A', Items.gold_ingot, 'B', Items.diamond, 'C', Items.egg);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.emeraldGoldenEgg), "ABA", "BCB", "ABA", 'A', Items.gold_ingot, 'B', Items.emerald, 'C', Items.egg);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.emeraldGoldenEgg), "BAB", "ACA", "BAB", 'A', Items.gold_ingot, 'B', Items.emerald, 'C', Items.egg);
+
         if(Reference.CONFIG_OVERWRITE_VANILLA_RECIPES) {
             // Remove and replace vanilla cake recipe to include our raw egg
             removeRecipe(Items.cake);
