@@ -34,6 +34,10 @@ bit to be more compliant with the forge framework standards. Although I know how
 never coded in java before. It's a learning experience for me.
 
 ###Changelog
+Version 1.3
+* THIS VERSION IS CURRENTLY IN DEVELOPMENT
+* Added Egg Sandwich
+
 Version 1.2
 
 * WARNING: If you are updating, your Eggy Goodness Eggs will be removed from the world. (Sorry)
@@ -115,7 +119,7 @@ Gradle is used to execute the various build tasks when compiling EggyGoodness.
 2. Windows: Set environment variables for Gradle.
 	* Go back to `Environment Variables` and then create a new system variable.
 	* For `Variable Name`, input `GRADLE_HOME`.
-	* For `Variable Value`, input something similar to `C:\Gradle-1.11` exactly as shown (or wherever your Gradle installation is), and click `Ok`.
+	* For `Variable Value`, input something similar to `C:\Gradle-1.12` exactly as shown (or wherever your Gradle installation is), and click `Ok`.
 	* Scroll down to `Path` again, and append `;%GRADLE_HOME%\bin` EXACTLY AS SHOWN and click `Ok`.  Once again, double-check the location.
 3. Open up your command line and run `gradle`.  If it says "Welcome to Gradle [version].", then you're good to go.
 

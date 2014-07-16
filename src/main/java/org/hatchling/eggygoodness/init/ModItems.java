@@ -6,6 +6,7 @@ import org.hatchling.eggygoodness.reference.Reference;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
+    public static final ItemFoodEggyGoodness eggSandwich = new ItemEggSandwich();
     public static final ItemFoodEggyGoodness friedEgg = new ItemFriedEgg();
     public static final ItemFoodEggyGoodness hardBoiledEgg = new ItemHardBoiledEgg();
     public static final ItemFoodEggyGoodness rawEgg = new ItemRawEgg();
@@ -17,6 +18,7 @@ public class ModItems {
 
     public static void init()
     {
+        GameRegistry.registerItem(eggSandwich, "eggSandwich");
         GameRegistry.registerItem(friedEgg, "friedEgg");
         GameRegistry.registerItem(hardBoiledEgg, "hardBoiledEgg");
         GameRegistry.registerItem(rawEgg, "rawEgg");

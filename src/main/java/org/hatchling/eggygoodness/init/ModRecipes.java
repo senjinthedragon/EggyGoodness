@@ -21,6 +21,7 @@ public class ModRecipes
 
         // Shapeless Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawEgg), new ItemStack(Items.bowl));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggSandwich), new ItemStack(ModItems.hardBoiledEgg), new ItemStack(Items.bread));
 
         if(Reference.CONFIG_OVERWRITE_VANILLA_RECIPES) {
             // Remove and replace vanilla cake recipe to include our raw egg
