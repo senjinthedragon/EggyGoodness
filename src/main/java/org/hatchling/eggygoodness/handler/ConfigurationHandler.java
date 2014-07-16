@@ -19,15 +19,6 @@ public class ConfigurationHandler {
         }
     }
 
-    @SubscribeEvent
-    public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
-    {
-        if (event.modID.equalsIgnoreCase(Reference.MOD_ID))
-        {
-            loadConfiguration();
-        }
-    }
-
     private static void loadConfiguration()
     {
         Reference.CONFIG_OVERWRITE_VANILLA_RECIPES = configuration.getBoolean("overwriteVanillaRecipes", Configuration.CATEGORY_GENERAL, true, "Replace the vanilla Cake and Pumpkin Pie recipes with versions that use Raw Egg");
@@ -35,6 +26,15 @@ public class ConfigurationHandler {
         if (configuration.hasChanged())
         {
             configuration.save();
+        }
+    }
+
+    @SubscribeEvent
+    public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
+    {
+        if (event.modID.equalsIgnoreCase(Reference.MOD_ID))
+        {
+            loadConfiguration();
         }
     }
 }
