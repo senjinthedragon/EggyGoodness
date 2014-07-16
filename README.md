@@ -34,7 +34,9 @@ bit to be more compliant with the forge framework standards. Although I know how
 never coded in java before. It's a learning experience for me.
 
 ###Changelog
+
 Version 1.3
+
 * THIS VERSION IS CURRENTLY IN DEVELOPMENT
 * Added Egg Sandwich
 * There's a small chance of Double-Yolk eggs when you break an egg. (Double Food, Double Saturation)
