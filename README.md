@@ -38,6 +38,7 @@ Version 1.3
 * THIS VERSION IS CURRENTLY IN DEVELOPMENT
 * Added Egg Sandwich
 * Changed the Scrambled Egg texture
+* BUGFIX: Raw Eggs no longer interfere with interface colors. 
 
 Version 1.2
 
