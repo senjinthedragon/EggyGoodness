@@ -96,7 +96,7 @@ The Java JDK is used to compile EggyGoodness.
     * Click on `Environment Variables`.
     * Under `System Variables`, click `New`.
     * For `Variable Name`, input `JAVA_HOME`.
-    * For `Variable Value`, input something similar to `C:\Program Files\Java\jdk1.7.0_60` exactly as shown (or wherever your Java JDK installation is), and click `Ok`.
+    * For `Variable Value`, input something similar to `C:\Program Files\Java\jdk1.7.0_65` exactly as shown (or wherever your Java JDK installation is), and click `Ok`.
     * Scroll down to a variable named `Path`, and double-click on it.
     * Append `;%JAVA_HOME%\bin` EXACTLY AS SHOWN and click `Ok`.  Make sure the location is correct; double-check just to make sure.
 3. Open up your command line and run `javac`.  If it spews out a bunch of possible options and the usage, then you're good to go.
