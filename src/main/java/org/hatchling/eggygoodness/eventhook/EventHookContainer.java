@@ -8,6 +8,8 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import org.hatchling.eggygoodness.init.ModItems;
 import org.hatchling.eggygoodness.reference.Reference;
 
+import java.util.Random;
+
 public class EventHookContainer
 {
     @SubscribeEvent
@@ -26,8 +28,17 @@ public class EventHookContainer
 
                 if(player.getCurrentEquippedItem().getItem() == Items.egg)
                 {
-                    returnStack = new ItemStack(ModItems.rawEgg);
-                    soundFX = "egg_crack";
+                    Random rand = new Random();
+
+                    if(rand.nextInt(20) == 0)
+                    {
+                        returnStack = new ItemStack(ModItems.rawDoubleYolkEgg);
+                    }
+                    else
+                    {
+                        returnStack = new ItemStack(ModItems.rawEgg);
+                        soundFX = "egg_crack";
+                    }
                 }
                 else if(player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledEgg)
                 {

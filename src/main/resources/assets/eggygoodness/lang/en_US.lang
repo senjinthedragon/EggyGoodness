@@ -1,6 +1,8 @@
 item.eggygoodness:eggSandwich.name=Egg Sandwich
+item.eggygoodness:friedDoubleYolkEgg.name=Fried Double-Yolk Egg
 item.eggygoodness:friedEgg.name=Fried Egg
 item.eggygoodness:hardBoiledEgg.name=Hard Boiled Egg
+item.eggygoodness:rawDoubleYolkEgg.name=Raw Double-Yolk Egg
 item.eggygoodness:rawEgg.name=Raw Egg
 item.eggygoodness:rawScrambledEgg.name=Raw Scrambled Egg
 item.eggygoodness:scrambledEgg.name=Scrambled Egg

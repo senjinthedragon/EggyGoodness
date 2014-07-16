@@ -37,6 +37,7 @@ never coded in java before. It's a learning experience for me.
 Version 1.3
 * THIS VERSION IS CURRENTLY IN DEVELOPMENT
 * Added Egg Sandwich
+* There's a small chance of Double-Yolk eggs when you break an egg. (Double Food, Double Saturation)
 * Changed the Scrambled Egg texture
 * BUGFIX: Raw Eggs no longer interfere with interface colors. 
 
