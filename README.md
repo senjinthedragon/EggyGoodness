@@ -39,6 +39,7 @@ Version 1.3
 
 * THIS VERSION IS CURRENTLY IN DEVELOPMENT
 * Added Egg Sandwich
+* Added Diamond and Emerald Fabergé Egg
 * There's a small chance of Double-Yolk eggs when you break an egg. (Double Food, Double Saturation)
 * Changed the Scrambled Egg texture
 * BUGFIX: Opacity removed from Raw Eggs 
