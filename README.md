@@ -37,7 +37,6 @@ never coded in java before. It's a learning experience for me.
 
 Version 1.3
 
-* THIS VERSION IS CURRENTLY IN DEVELOPMENT
 * Changed the Scrambled Egg texture
 * Added Egg Sandwich
 * Added Eggnog
