@@ -28,6 +28,7 @@ public class ModItems {
     public static final ItemEggyGoodness goldenEgg = new ItemGoldenEgg();
     public static final ItemEggyGoodness goldenFeather = new ItemGoldenFeather();
     public static final ItemEggyGoodness goldDust = new ItemGoldDust();
+    public static final ItemFoodEggyGoodness eggNog = new ItemEggNog();
 
     public static void init()
     {
@@ -53,5 +54,6 @@ public class ModItems {
         GameRegistry.registerItem(goldenEgg, "goldenEgg");
         GameRegistry.registerItem(goldenFeather, "goldenFeather");
         GameRegistry.registerItem(goldDust, "goldDust");
+        GameRegistry.registerItem(eggNog, "eggNog");
     }
 }

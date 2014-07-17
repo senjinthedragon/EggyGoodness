@@ -40,6 +40,7 @@ Version 1.3
 * THIS VERSION IS CURRENTLY IN DEVELOPMENT
 * Changed the Scrambled Egg texture
 * Added Egg Sandwich
+* Added Eggnog
 * Added Diamond and Emerald Fabergé Egg
 * There's a small chance of Double-Yolk eggs when you break an egg. (Double Food, Double Saturation)
 * Throwing a Diamond or Emerald Fabergé egg has a small chance of a Golden Chicken to hatch
