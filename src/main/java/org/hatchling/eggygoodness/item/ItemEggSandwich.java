@@ -4,7 +4,7 @@ public class ItemEggSandwich extends ItemFoodEggyGoodness
 {
     public ItemEggSandwich()
     {
-        super(6, 0.8F, true);
+        super(8, 0.8F, true);
         this.setUnlocalizedName("eggSandwich");
     }
 }

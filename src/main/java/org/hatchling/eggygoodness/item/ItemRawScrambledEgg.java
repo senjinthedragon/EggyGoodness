@@ -4,7 +4,7 @@ public class ItemRawScrambledEgg extends ItemFoodBowl
 {
     public ItemRawScrambledEgg()
     {
-        super(2, 0.3f, true);
+        super(3, 0.1F, true);
         this.setUnlocalizedName("rawScrambledEgg");
     }
 }

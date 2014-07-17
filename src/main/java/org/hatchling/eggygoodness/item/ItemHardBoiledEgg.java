@@ -4,7 +4,7 @@ public class ItemHardBoiledEgg extends ItemFoodEggyGoodness
 {
     public ItemHardBoiledEgg()
     {
-        super(5, 0.6f, true);
+        super(6, 0.8F, true);
         this.setUnlocalizedName("hardBoiledEgg");
         this.setMaxStackSize(16);
     }
