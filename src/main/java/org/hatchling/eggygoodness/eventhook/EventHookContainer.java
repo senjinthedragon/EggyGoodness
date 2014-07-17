@@ -26,9 +26,9 @@ public class EventHookContainer
 
                 if (currentEquippedItem == Items.egg || currentEquippedItem == ModItems.unpeeledSoftBoiledEgg || currentEquippedItem == ModItems.unpeeledHardBoiledEgg || currentEquippedItem == ModItems.goldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledGoldenEgg || currentEquippedItem == ModItems.unpeeledHardBoiledGoldenEgg || currentEquippedItem == ModItems.diamondGoldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledDiamondGoldenEgg || currentEquippedItem == ModItems.unpeeledHardBoiledDiamondGoldenEgg || currentEquippedItem == ModItems.emeraldGoldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledEmeraldGoldenEgg || currentEquippedItem == ModItems.unpeeledHardBoiledEmeraldGoldenEgg)
                 {
-                    ItemStack returnStack = null;
-                    ItemStack extrasStack = null;
-                    String soundFX = "";
+                    ItemStack returnStack;
+                    ItemStack extrasStack;
+                    String soundFX;
 
                     if (currentEquippedItem == Items.egg || currentEquippedItem == ModItems.goldenEgg || currentEquippedItem == ModItems.diamondGoldenEgg || currentEquippedItem == ModItems.emeraldGoldenEgg)
                     {
