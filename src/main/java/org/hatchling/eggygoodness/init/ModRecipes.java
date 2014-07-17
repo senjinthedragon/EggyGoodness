@@ -31,8 +31,8 @@ public class ModRecipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawDoubleYolkEgg), new ItemStack(Items.bowl));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggSandwich), new ItemStack(ModItems.hardBoiledEgg), new ItemStack(Items.bread));
         GameRegistry.addShapelessRecipe(new ItemStack(Items.gold_ingot), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggNog), new ItemStack(Items.milk_bucket), new ItemStack(Items.sugar), new ItemStack(ModItems.rawEgg));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggNog), new ItemStack(Items.milk_bucket), new ItemStack(Items.sugar), new ItemStack(ModItems.rawDoubleYolkEgg));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggnog), new ItemStack(Items.milk_bucket), new ItemStack(Items.sugar), new ItemStack(ModItems.rawEgg));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggnog), new ItemStack(Items.milk_bucket), new ItemStack(Items.sugar), new ItemStack(ModItems.rawDoubleYolkEgg));
 
         // Shaped Recipes
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.diamondGoldenEgg), "ABA", "BCB", "ABA", 'A', Items.gold_ingot, 'B', Items.diamond, 'C', Items.egg);
