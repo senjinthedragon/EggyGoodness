@@ -3,6 +3,7 @@ package org.hatchling.eggygoodness.eventhook;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import org.hatchling.eggygoodness.init.ModItems;
@@ -19,100 +20,73 @@ public class EventHookContainer
 
         if(event.action == PlayerInteractEvent.Action.LEFT_CLICK_BLOCK)
         {
-            if(player.getCurrentEquippedItem() != null && (player.getCurrentEquippedItem().getItem() == Items.egg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledEgg))
+            if(player.getCurrentEquippedItem() != null)
             {
-                ItemStack returnStack = null;
-                String soundFX = "";
-                ItemStack boneMeal = new ItemStack(Items.dye);
-                boneMeal.setItemDamage(15);
+                Item currentEquippedItem = player.getCurrentEquippedItem().getItem();
 
-                if(player.getCurrentEquippedItem().getItem() == Items.egg)
+                if (currentEquippedItem == Items.egg || currentEquippedItem == ModItems.unpeeledSoftBoiledEgg || currentEquippedItem == ModItems.unpeeledHardBoiledEgg || currentEquippedItem == ModItems.goldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledGoldenEgg || currentEquippedItem == ModItems.unpeeledHardBoiledGoldenEgg || currentEquippedItem == ModItems.diamondGoldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledDiamondGoldenEgg || currentEquippedItem == ModItems.unpeeledHardBoiledDiamondGoldenEgg || currentEquippedItem == ModItems.emeraldGoldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledEmeraldGoldenEgg || currentEquippedItem == ModItems.unpeeledHardBoiledEmeraldGoldenEgg)
                 {
-                    Random rand = new Random();
+                    ItemStack returnStack = null;
+                    ItemStack extrasStack = null;
+                    String soundFX = "";
 
-                    if(rand.nextInt(20) == 0)
+                    if (currentEquippedItem == Items.egg || currentEquippedItem == ModItems.goldenEgg || currentEquippedItem == ModItems.diamondGoldenEgg || currentEquippedItem == ModItems.emeraldGoldenEgg)
                     {
-                        returnStack = new ItemStack(ModItems.rawDoubleYolkEgg);
+                        Random rand = new Random();
+                        soundFX = "egg_crack";
+
+                        if(rand.nextInt(20) == 0)
+                        {
+                            returnStack = new ItemStack(ModItems.rawDoubleYolkEgg);
+                        }
+                        else
+                        {
+                            returnStack = new ItemStack(ModItems.rawEgg);
+                        }
                     }
                     else
                     {
-                        returnStack = new ItemStack(ModItems.rawEgg);
-                        soundFX = "egg_crack";
+                        soundFX = "egg_peel";
+
+                        if(currentEquippedItem == ModItems.unpeeledSoftBoiledEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledGoldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledDiamondGoldenEgg || currentEquippedItem == ModItems.unpeeledSoftBoiledEmeraldGoldenEgg)
+                        {
+                            returnStack = new ItemStack(ModItems.softBoiledEgg);
+                        }
+                        else
+                        {
+                            returnStack = new ItemStack(ModItems.hardBoiledEgg);
+                        }
                     }
-                }
-                else if(player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledEgg)
-                {
-                    returnStack = new ItemStack(ModItems.softBoiledEgg);
-                    soundFX = "egg_peel";
-                }
-                else if(player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledEgg)
-                {
-                    returnStack = new ItemStack(ModItems.hardBoiledEgg);
-                    soundFX = "egg_peel";
-                }
 
-                if(--player.getCurrentEquippedItem().stackSize == 0)
-                {
-                    player.inventory.setInventorySlotContents(player.inventory.currentItem, null);
-                }
-
-                player.getEntityWorld().playSoundEffect(player.posX + 0.5D, player.posY + 0.5D, player.posZ + 0.5D, Reference.MOD_ID.toLowerCase() + ":" + soundFX, 1.0F, player.getEntityWorld().rand.nextFloat() * 0.1F + 0.9F);
-                if(!player.inventory.addItemStackToInventory(boneMeal))
-                {
-                    if(!player.getEntityWorld().isRemote) player.entityDropItem(boneMeal, player.getEyeHeight());
-                }
-                if(!player.inventory.addItemStackToInventory(returnStack))
-                {
-                    if(!player.getEntityWorld().isRemote) player.entityDropItem(returnStack, player.getEyeHeight());
-                }
-                event.setCanceled(true);
-            }
-            else if(player.getCurrentEquippedItem() != null && (player.getCurrentEquippedItem().getItem() == ModItems.goldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.diamondGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledDiamondGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledDiamondGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.emeraldGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledEmeraldGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledEmeraldGoldenEgg))
-            {
-                ItemStack returnStack = null;
-                String soundFX = "";
-                ItemStack goldDust = new ItemStack(ModItems.goldDust);
-
-                if(player.getCurrentEquippedItem().getItem() == ModItems.goldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.diamondGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.emeraldGoldenEgg)
-                {
-                    Random rand = new Random();
-
-                    if(rand.nextInt(20) == 0)
+                    if (currentEquippedItem == Items.egg || currentEquippedItem == ModItems.unpeeledSoftBoiledEgg || currentEquippedItem == ModItems.unpeeledHardBoiledEgg)
                     {
-                        returnStack = new ItemStack(ModItems.rawDoubleYolkEgg);
+                        extrasStack = new ItemStack(Items.dye);
+                        extrasStack.setItemDamage(15);
                     }
                     else
                     {
-                        returnStack = new ItemStack(ModItems.rawEgg);
-                        soundFX = "egg_crack";
+                        extrasStack = new ItemStack(ModItems.goldDust);
                     }
-                }
-                else if(player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledDiamondGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledSoftBoiledEmeraldGoldenEgg)
-                {
-                    returnStack = new ItemStack(ModItems.softBoiledEgg);
-                    soundFX = "egg_peel";
-                }
-                else if(player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledDiamondGoldenEgg || player.getCurrentEquippedItem().getItem() == ModItems.unpeeledHardBoiledEmeraldGoldenEgg)
-                {
-                    returnStack = new ItemStack(ModItems.hardBoiledEgg);
-                    soundFX = "egg_peel";
-                }
 
-                if(--player.getCurrentEquippedItem().stackSize == 0)
-                {
-                    player.inventory.setInventorySlotContents(player.inventory.currentItem, null);
-                }
+                    if(--player.getCurrentEquippedItem().stackSize == 0)
+                    {
+                        player.inventory.setInventorySlotContents(player.inventory.currentItem, null);
+                    }
 
-                player.getEntityWorld().playSoundEffect(player.posX + 0.5D, player.posY + 0.5D, player.posZ + 0.5D, Reference.MOD_ID.toLowerCase() + ":" + soundFX, 1.0F, player.getEntityWorld().rand.nextFloat() * 0.1F + 0.9F);
-                if(!player.inventory.addItemStackToInventory(goldDust))
-                {
-                    if(!player.getEntityWorld().isRemote) player.entityDropItem(goldDust, player.getEyeHeight());
+                    if(!player.inventory.addItemStackToInventory(returnStack))
+                    {
+                        if(!player.getEntityWorld().isRemote) player.entityDropItem(returnStack, player.getEyeHeight());
+                    }
+
+                    if(!player.inventory.addItemStackToInventory(extrasStack))
+                    {
+                        if(!player.getEntityWorld().isRemote) player.entityDropItem(extrasStack, player.getEyeHeight());
+                    }
+
+                    player.getEntityWorld().playSoundEffect(player.posX + 0.5D, player.posY + 0.5D, player.posZ + 0.5D, Reference.MOD_ID.toLowerCase() + ":" + soundFX, 1.0F, player.getEntityWorld().rand.nextFloat() * 0.1F + 0.9F);
+
+                    event.setCanceled(true);
                 }
-                if(!player.inventory.addItemStackToInventory(returnStack))
-                {
-                    if(!player.getEntityWorld().isRemote) player.entityDropItem(returnStack, player.getEyeHeight());
-                }
-                event.setCanceled(true);
             }
         }
     }
