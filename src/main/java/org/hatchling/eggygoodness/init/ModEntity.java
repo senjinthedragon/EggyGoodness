@@ -3,11 +3,11 @@ package org.hatchling.eggygoodness.init;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import org.hatchling.eggygoodness.EggyGoodness;
+import org.hatchling.eggygoodness.reference.Reference;
+import org.hatchling.eggygoodness.entity.EntityGoldenEgg;
 import org.hatchling.eggygoodness.entity.EntityDiamondGoldenEgg;
 import org.hatchling.eggygoodness.entity.EntityEmeraldGoldenEgg;
 import org.hatchling.eggygoodness.entity.EntityGoldenChicken;
-import org.hatchling.eggygoodness.entity.EntityGoldenEgg;
-import org.hatchling.eggygoodness.reference.Reference;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModEntity {

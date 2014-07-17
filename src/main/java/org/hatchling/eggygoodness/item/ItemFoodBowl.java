@@ -1,9 +1,9 @@
 package org.hatchling.eggygoodness.item;
 
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
+import net.minecraft.entity.player.EntityPlayer;
 
 public class ItemFoodBowl extends ItemFoodEggyGoodness
 {

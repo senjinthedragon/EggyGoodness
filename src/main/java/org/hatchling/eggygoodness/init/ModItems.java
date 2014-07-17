@@ -1,8 +1,8 @@
 package org.hatchling.eggygoodness.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import org.hatchling.eggygoodness.item.*;
 import org.hatchling.eggygoodness.reference.Reference;
+import org.hatchling.eggygoodness.item.*;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {

@@ -1,15 +1,14 @@
 package org.hatchling.eggygoodness.eventhook;
 
+import java.util.Random;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import org.hatchling.eggygoodness.init.ModItems;
 import org.hatchling.eggygoodness.reference.Reference;
-
-import java.util.Random;
+import org.hatchling.eggygoodness.init.ModItems;
 
 public class EventHookContainer
 {

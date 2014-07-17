@@ -1,7 +1,7 @@
 package org.hatchling.eggygoodness.utility;
 
-import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
+import cpw.mods.fml.common.FMLLog;
 import org.hatchling.eggygoodness.reference.Reference;
 
 public class LogHelper {

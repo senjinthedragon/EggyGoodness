@@ -1,9 +1,9 @@
 package org.hatchling.eggygoodness.creativetab;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import org.hatchling.eggygoodness.init.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
 import org.hatchling.eggygoodness.reference.Reference;
+import org.hatchling.eggygoodness.init.ModItems;
 
 public class CreativeTabEggyGoodness
 {

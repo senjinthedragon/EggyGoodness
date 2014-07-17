@@ -7,13 +7,13 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
-import org.hatchling.eggygoodness.handler.ConfigurationHandler;
-import org.hatchling.eggygoodness.eventhook.EventHookContainer;
+import org.hatchling.eggygoodness.reference.Reference;
+import org.hatchling.eggygoodness.proxy.IProxy;
 import org.hatchling.eggygoodness.init.ModEntity;
 import org.hatchling.eggygoodness.init.ModItems;
 import org.hatchling.eggygoodness.init.ModRecipes;
-import org.hatchling.eggygoodness.proxy.IProxy;
-import org.hatchling.eggygoodness.reference.Reference;
+import org.hatchling.eggygoodness.handler.ConfigurationHandler;
+import org.hatchling.eggygoodness.eventhook.EventHookContainer;
 import org.hatchling.eggygoodness.utility.LogHelper;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)

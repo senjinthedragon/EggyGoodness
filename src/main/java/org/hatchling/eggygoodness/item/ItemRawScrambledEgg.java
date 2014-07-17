@@ -1,10 +1,10 @@
 package org.hatchling.eggygoodness.item;
 
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.world.World;
 
 public class ItemRawScrambledEgg extends ItemFoodBowl
 {

@@ -1,10 +1,10 @@
 package org.hatchling.eggygoodness.handler;
 
+import java.io.File;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
 import org.hatchling.eggygoodness.reference.Reference;
-import java.io.File;
 
 public class ConfigurationHandler {
     public static Configuration configuration;

@@ -1,8 +1,8 @@
 package org.hatchling.eggygoodness.item;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.EntityPlayer;
 import org.hatchling.eggygoodness.entity.EntityDiamondGoldenEgg;
 
 public class ItemDiamondGoldenEgg extends ItemEggyGoodness

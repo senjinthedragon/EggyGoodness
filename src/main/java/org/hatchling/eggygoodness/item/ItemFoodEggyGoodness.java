@@ -1,12 +1,12 @@
 package org.hatchling.eggygoodness.item;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-import org.hatchling.eggygoodness.creativetab.CreativeTabEggyGoodness;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import org.hatchling.eggygoodness.reference.Reference;
+import org.hatchling.eggygoodness.creativetab.CreativeTabEggyGoodness;
 
 public class ItemFoodEggyGoodness extends ItemFood
 {

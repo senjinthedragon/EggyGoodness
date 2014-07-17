@@ -1,13 +1,13 @@
 package org.hatchling.eggygoodness.proxy;
 
-import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.model.ModelChicken;
 import net.minecraft.client.renderer.entity.RenderSnowball;
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import org.hatchling.eggygoodness.init.ModItems;
+import org.hatchling.eggygoodness.entity.EntityGoldenEgg;
 import org.hatchling.eggygoodness.entity.EntityDiamondGoldenEgg;
 import org.hatchling.eggygoodness.entity.EntityEmeraldGoldenEgg;
 import org.hatchling.eggygoodness.entity.EntityGoldenChicken;
-import org.hatchling.eggygoodness.entity.EntityGoldenEgg;
-import org.hatchling.eggygoodness.init.ModItems;
 import org.hatchling.eggygoodness.render.RenderGoldenChicken;
 
 public class ClientProxy extends CommonProxy
