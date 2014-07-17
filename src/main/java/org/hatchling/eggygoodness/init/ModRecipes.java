@@ -17,13 +17,20 @@ public class ModRecipes
         GameRegistry.addSmelting(ModItems.rawEgg, new ItemStack(ModItems.friedEgg), 0.1f);
         GameRegistry.addSmelting(ModItems.rawDoubleYolkEgg, new ItemStack(ModItems.friedDoubleYolkEgg), 0.1f);
         GameRegistry.addSmelting(Items.egg, new ItemStack(ModItems.unpeeledSoftBoiledEgg), 0.1f);
+        GameRegistry.addSmelting(ModItems.goldenEgg, new ItemStack(ModItems.unpeeledSoftBoiledGoldenEgg), 0.1f);
+        GameRegistry.addSmelting(ModItems.diamondGoldenEgg, new ItemStack(ModItems.unpeeledSoftBoiledDiamondGoldenEgg), 0.1f);
+        GameRegistry.addSmelting(ModItems.emeraldGoldenEgg, new ItemStack(ModItems.unpeeledSoftBoiledEmeraldGoldenEgg), 0.1f);
         GameRegistry.addSmelting(ModItems.unpeeledSoftBoiledEgg, new ItemStack(ModItems.unpeeledHardBoiledEgg), 0.1f);
+        GameRegistry.addSmelting(ModItems.unpeeledSoftBoiledGoldenEgg, new ItemStack(ModItems.unpeeledHardBoiledGoldenEgg), 0.1f);
+        GameRegistry.addSmelting(ModItems.unpeeledSoftBoiledDiamondGoldenEgg, new ItemStack(ModItems.unpeeledHardBoiledDiamondGoldenEgg), 0.1f);
+        GameRegistry.addSmelting(ModItems.unpeeledSoftBoiledEmeraldGoldenEgg, new ItemStack(ModItems.unpeeledHardBoiledEmeraldGoldenEgg), 0.1f);
         GameRegistry.addSmelting(ModItems.rawScrambledEgg, new ItemStack(ModItems.scrambledEgg), 0.1f);
 
         // Shapeless Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawEgg), new ItemStack(Items.bowl));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawDoubleYolkEgg), new ItemStack(Items.bowl));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggSandwich), new ItemStack(ModItems.hardBoiledEgg), new ItemStack(Items.bread));
+        GameRegistry.addShapelessRecipe(new ItemStack(Items.gold_ingot), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust));
 
         // Shaped Recipes
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.diamondGoldenEgg), "ABA", "BCB", "ABA", 'A', Items.gold_ingot, 'B', Items.diamond, 'C', Items.egg);
@@ -41,6 +48,15 @@ public class ModRecipes
             removeRecipe(Items.pumpkin_pie);
             GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.rawEgg);
             GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.rawDoubleYolkEgg);
+        }
+        else
+        {
+            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.goldenEgg);
+            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.diamondGoldenEgg);
+            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.emeraldGoldenEgg);
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.goldenEgg);
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.diamondGoldenEgg);
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.emeraldGoldenEgg);
         }
     }
 

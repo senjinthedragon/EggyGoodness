@@ -38,10 +38,16 @@ never coded in java before. It's a learning experience for me.
 Version 1.3
 
 * THIS VERSION IS CURRENTLY IN DEVELOPMENT
+* Changed the Scrambled Egg texture
 * Added Egg Sandwich
 * Added Diamond and Emerald Fabergé Egg
 * There's a small chance of Double-Yolk eggs when you break an egg. (Double Food, Double Saturation)
-* Changed the Scrambled Egg texture
+* Throwing a Diamond or Emerald Fabergé egg has a small chance of a Golden Chicken to hatch
+* Killing a Golden Chicken sometimes drops a Golden Feather
+* Golden Chickens lay Golden Eggs
+* Golden Eggs and Diamond/Emerald Fabergé Eggs give a little bit of gold dust when peeled or cracked on a solid block.
+* 9 Gold Dust for a Gold Ingot
+* For the truly wealthy: You can cook with Golden and Fabergé Eggs.
 * BUGFIX: Opacity removed from Raw Eggs 
 
 Version 1.2

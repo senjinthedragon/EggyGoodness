@@ -3,14 +3,14 @@ package org.hatchling.eggygoodness.item;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import org.hatchling.eggygoodness.entity.EntityDiamondGoldenEgg;
+import org.hatchling.eggygoodness.entity.EntityGoldenEgg;
 
-public class ItemDiamondGoldenEgg extends ItemEggyGoodness
+public class ItemGoldenEgg extends ItemEggyGoodness
 {
-    public ItemDiamondGoldenEgg()
+    public ItemGoldenEgg()
     {
         super();
-        this.setUnlocalizedName("diamondGoldenEgg");
+        this.setUnlocalizedName("goldenEgg");
         this.setMaxStackSize(16);
     }
 
@@ -28,7 +28,7 @@ public class ItemDiamondGoldenEgg extends ItemEggyGoodness
 
         if (!p_77659_2_.isRemote)
         {
-            p_77659_2_.spawnEntityInWorld(new EntityDiamondGoldenEgg(p_77659_2_, p_77659_3_));
+            p_77659_2_.spawnEntityInWorld(new EntityGoldenEgg(p_77659_2_, p_77659_3_));
         }
 
         return p_77659_1_;
