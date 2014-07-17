@@ -4,10 +4,8 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.MathHelper;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import org.hatchling.eggygoodness.init.ModItems;
-import org.hatchling.eggygoodness.entity.EntityGoldenChicken;
 import org.hatchling.eggygoodness.reference.Reference;
 
 import java.util.Random;
