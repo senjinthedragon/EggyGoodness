@@ -43,7 +43,7 @@ Version 1.3
 * Added Egg Sandwich
 * Added Eggnog
 * Added Diamond and Emerald Fabergé Egg
-* There's a small chance of Double-Yolk eggs when you break an egg. (Double Food, Double Saturation)
+* There's a small chance of Double-Yolk eggs when you break an egg.
 * Throwing a Diamond or Emerald Fabergé egg has a small chance of a Golden Chicken to hatch
 * Killing a Golden Chicken sometimes drops a Golden Feather
 * Golden Chickens lay Golden Eggs
