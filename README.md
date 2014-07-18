@@ -47,7 +47,7 @@ Version 1.3
 * Throwing a Diamond or Emerald Fabergé egg has a small chance of a Golden Chicken to hatch
 * Killing a Golden Chicken sometimes drops a Golden Feather
 * Golden Chickens lay Golden Eggs
-* Golden Eggs and Diamond/Emerald Fabergé Eggs give a little bit of gold dust when peeled or cracked on a block.
+* Golden Eggs and Diamond/Emerald Fabergé Eggs give a little bit of Gold Dust when peeled or cracked on a block.
 * 9 Gold Dust for a Gold Ingot
 * For the truly wealthy: You can cook with Golden and Fabergé Eggs.
 * BUGFIX: Opacity removed from Raw Eggs 
