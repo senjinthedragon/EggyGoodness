@@ -1,5 +1,8 @@
 ##Welcome to Eggy Goodness!
 
+Eggy Goodness is a Minecraft mod that enables its users to prepare, cook and eat eggs in various different ways.
+As of version 1.3 it now also includes a way to make Golden Chickens that lay Golden Eggs that can be turned into gold ingots.
+
 **LATEST VERSION**:
 
 [EggyGoodness 1.3 for MC 1.7.10](http://www.hatchling.org/eggygoodness/eggygoodness-1.7.10-1.3.jar)
@@ -26,14 +29,6 @@
 [Compiling EggyGoodness](#compiling-eggy-goodness) - For those that want the latest unreleased features.
 
 [Contributing](#contributing) - For those that want to help out.
-
-My very first attempt at modding minecraft. Just a smelting recipe for turning eggs into edible fried eggs.
-
-From version 1.1 onward you can do more then just fry them. Boiled soft and hard and even scrambled are possible now as well.
-
-The original files for this mod never made it onto github and I wanted to add them as well as rewrite them a tiny little
-bit to be more compliant with the forge framework standards. Although I know how to program in quite a few languages, I
-never coded in java before. It's a learning experience for me.
 
 ###Changelog
 
