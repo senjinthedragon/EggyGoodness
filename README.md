@@ -32,6 +32,10 @@ As of version 1.3 it now also includes a way to make Golden Chickens that lay Go
 
 ###Changelog
 
+Version 1.4
+* WORK IN PROGRESS, DEVELOPMENT VERSION
+* Gold Dust melts into Gold Ingot
+
 Version 1.3
 
 * Changed the Scrambled Egg texture
@@ -159,7 +163,7 @@ This section assumes that you're using the command-line version of Git.
 2. Execute `gradle build`. If you did everything right, `BUILD SUCCESSFUL` will be displayed after it finishes.  This should be relatively quick.
     * If you see `BUILD FAILED`, check the error output (it should be right around `BUILD FAILED`), fix everything (if possible), and try again.
 3. Navigate to `mcdev\EggyGoodness\build\libs`.
-    *  You should see a `.jar` file named `EggyGoodness-1.7.10-1.3.jar`.
+    *  You should see a `.jar` file named `EggyGoodness-1.7.10-1.4.jar`.
 4. Copy the jar into your Minecraft mods folder, and you are done!
 
 ####Updating Your Repository

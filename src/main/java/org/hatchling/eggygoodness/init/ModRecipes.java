@@ -25,6 +25,7 @@ public class ModRecipes
         GameRegistry.addSmelting(ModItems.unpeeledSoftBoiledDiamondGoldenEgg, new ItemStack(ModItems.unpeeledHardBoiledDiamondGoldenEgg), 0.1f);
         GameRegistry.addSmelting(ModItems.unpeeledSoftBoiledEmeraldGoldenEgg, new ItemStack(ModItems.unpeeledHardBoiledEmeraldGoldenEgg), 0.1f);
         GameRegistry.addSmelting(ModItems.rawScrambledEgg, new ItemStack(ModItems.scrambledEgg), 0.1f);
+        GameRegistry.addSmelting(ModItems.goldDust, new ItemStack(Items.gold_nugget), 0.1f);
 
         // Shapeless Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawEgg), new ItemStack(Items.bowl));
