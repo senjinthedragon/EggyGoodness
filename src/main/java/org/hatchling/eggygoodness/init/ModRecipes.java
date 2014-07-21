@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.crafting.CraftingManager;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 import org.hatchling.eggygoodness.reference.Reference;
 import org.hatchling.eggygoodness.utility.RecipeFinder;
 
@@ -13,6 +14,10 @@ public class ModRecipes
 {
     public static void init()
     {
+        // Oredictionary Registrations
+        OreDictionary.registerOre("nuggetGold", ModItems.goldDust);
+        OreDictionary.registerOre("dustGold", ModItems.goldDust);
+
         // Smelting Recipes
         GameRegistry.addSmelting(ModItems.rawEgg, new ItemStack(ModItems.friedEgg), 0.1f);
         GameRegistry.addSmelting(ModItems.rawDoubleYolkEgg, new ItemStack(ModItems.friedDoubleYolkEgg), 0.1f);

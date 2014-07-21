@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.oredict.OreDictionary;
 import org.hatchling.eggygoodness.reference.Reference;
 import org.hatchling.eggygoodness.proxy.IProxy;
 import org.hatchling.eggygoodness.init.ModEntity;
@@ -48,5 +49,10 @@ public class EggyGoodness
     public void postInit(FMLPostInitializationEvent event)
     {
         LogHelper.info("Post Initialization Complete!");
+
+//        for (String oreName : OreDictionary.getOreNames())
+//        {
+//            LogHelper.info(oreName);
+//        }
     }
 }
