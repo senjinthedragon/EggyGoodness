@@ -34,8 +34,8 @@ As of version 1.3 it now also includes a way to make Golden Chickens that lay Go
 
 Version 1.4
 * WORK IN PROGRESS, DEVELOPMENT VERSION
-* Gold Dust melts into Gold Ingot
-* OreDictionary support for Gold Dust
+* Gold Dust melts into Gold Nugget
+* Added Gold Dust to OreDictionary
 
 Version 1.3
 
