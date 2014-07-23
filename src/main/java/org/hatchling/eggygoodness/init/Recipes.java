@@ -7,10 +7,12 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.crafting.CraftingManager;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 import org.hatchling.eggygoodness.reference.Reference;
 import org.hatchling.eggygoodness.utility.RecipeFinder;
 
-public class ModRecipes
+public class Recipes
 {
     public static void init()
     {
@@ -36,35 +38,35 @@ public class ModRecipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawEgg), new ItemStack(Items.bowl));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.rawScrambledEgg), new ItemStack(ModItems.rawDoubleYolkEgg), new ItemStack(Items.bowl));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggSandwich), new ItemStack(ModItems.hardBoiledEgg), new ItemStack(Items.bread));
-        GameRegistry.addShapelessRecipe(new ItemStack(Items.gold_ingot), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust), new ItemStack(ModItems.goldDust));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.gold_ingot), "nuggetGold", "nuggetGold", "nuggetGold", "nuggetGold", "nuggetGold", "nuggetGold", "nuggetGold", "nuggetGold", "nuggetGold"));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggnog), new ItemStack(Items.milk_bucket), new ItemStack(Items.sugar), new ItemStack(ModItems.rawEgg));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggnog), new ItemStack(Items.milk_bucket), new ItemStack(Items.sugar), new ItemStack(ModItems.rawDoubleYolkEgg));
 
         // Shaped Recipes
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.diamondGoldenEgg), "ABA", "BCB", "ABA", 'A', Items.gold_ingot, 'B', Items.diamond, 'C', Items.egg);
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.diamondGoldenEgg), "BAB", "ACA", "BAB", 'A', Items.gold_ingot, 'B', Items.diamond, 'C', Items.egg);
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.emeraldGoldenEgg), "ABA", "BCB", "ABA", 'A', Items.gold_ingot, 'B', Items.emerald, 'C', Items.egg);
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.emeraldGoldenEgg), "BAB", "ACA", "BAB", 'A', Items.gold_ingot, 'B', Items.emerald, 'C', Items.egg);
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.diamondGoldenEgg), "ABA", "BCB", "ABA", 'A', "ingotGold", 'B', "gemDiamond", 'C', new ItemStack(Items.egg)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.diamondGoldenEgg), "BAB", "ACA", "BAB", 'A', "ingotGold", 'B', "gemDiamond", 'C', new ItemStack(Items.egg)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldGoldenEgg), "ABA", "BCB", "ABA", 'A', "ingotGold", 'B', "gemEmerald", 'C', new ItemStack(Items.egg)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldGoldenEgg), "BAB", "ACA", "BAB", 'A', "ingotGold", 'B', "gemEmerald", 'C', new ItemStack(Items.egg)));
 
         if(Reference.CONFIG_OVERWRITE_VANILLA_RECIPES) {
             // Remove and replace vanilla cake recipe to include our raw egg
             removeRecipe(Items.cake);
-            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.rawEgg);
-            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.rawDoubleYolkEgg);
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', new ItemStack(Items.milk_bucket), 'B', new ItemStack(Items.sugar), 'C', "cropWheat", 'E', new ItemStack(ModItems.rawEgg)));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', new ItemStack(Items.milk_bucket), 'B', new ItemStack(Items.sugar), 'C', "cropWheat", 'E', new ItemStack(ModItems.rawDoubleYolkEgg)));
 
             // Remove and replace vanilla pumpkin pie recipe to include our raw egg
             removeRecipe(Items.pumpkin_pie);
-            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.rawEgg);
-            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.rawDoubleYolkEgg);
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), new ItemStack(Blocks.pumpkin), new ItemStack(Items.sugar), new ItemStack(ModItems.rawEgg));
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), new ItemStack(Blocks.pumpkin), new ItemStack(Items.sugar), new ItemStack(ModItems.rawDoubleYolkEgg));
         }
         else
         {
-            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.goldenEgg);
-            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.diamondGoldenEgg);
-            GameRegistry.addShapedRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', Items.milk_bucket, 'B', Items.sugar, 'C', Items.wheat, 'E', ModItems.emeraldGoldenEgg);
-            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.goldenEgg);
-            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.diamondGoldenEgg);
-            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), Blocks.pumpkin, Items.sugar, ModItems.emeraldGoldenEgg);
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', new ItemStack(Items.milk_bucket), 'B', new ItemStack(Items.sugar), 'C', "cropWheat", 'E', new ItemStack(ModItems.goldenEgg)));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', new ItemStack(Items.milk_bucket), 'B', new ItemStack(Items.sugar), 'C', "cropWheat", 'E', new ItemStack(ModItems.diamondGoldenEgg)));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.cake), "AAA", "BEB", "CCC", 'A', new ItemStack(Items.milk_bucket), 'B', new ItemStack(Items.sugar), 'C', "cropWheat", 'E', new ItemStack(ModItems.emeraldGoldenEgg)));
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), new ItemStack(Blocks.pumpkin), new ItemStack(Items.sugar), new ItemStack(ModItems.goldenEgg));
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), new ItemStack(Blocks.pumpkin), new ItemStack(Items.sugar), new ItemStack(ModItems.diamondGoldenEgg));
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.pumpkin_pie), new ItemStack(Blocks.pumpkin), new ItemStack(Items.sugar), new ItemStack(ModItems.emeraldGoldenEgg));
         }
     }
 

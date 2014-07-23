@@ -7,12 +7,12 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.oredict.OreDictionary;
+import org.hatchling.eggygoodness.handler.UpdateHandler;
 import org.hatchling.eggygoodness.reference.Reference;
 import org.hatchling.eggygoodness.proxy.IProxy;
 import org.hatchling.eggygoodness.init.ModEntity;
 import org.hatchling.eggygoodness.init.ModItems;
-import org.hatchling.eggygoodness.init.ModRecipes;
+import org.hatchling.eggygoodness.init.Recipes;
 import org.hatchling.eggygoodness.handler.ConfigurationHandler;
 import org.hatchling.eggygoodness.eventhook.EventHookContainer;
 import org.hatchling.eggygoodness.utility.LogHelper;
@@ -31,6 +31,7 @@ public class EggyGoodness
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        FMLCommonHandler.instance().bus().register(new UpdateHandler());
         ModItems.init();
         proxy.registerRenderThings();
         LogHelper.info("Pre Initialization Complete!");
@@ -39,7 +40,7 @@ public class EggyGoodness
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        ModRecipes.init();
+        Recipes.init();
         ModEntity.init(instance);
         MinecraftForge.EVENT_BUS.register(new EventHookContainer());
         LogHelper.info("Initialization Complete!");
