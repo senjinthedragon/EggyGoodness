@@ -36,7 +36,7 @@ public class EggyGoodness
         proxy.registerRenderThings();
         LogHelper.info("Pre Initialization Complete!");
     }
-
+//TODO Figure out if I want initialization log messages or not. What do other mods do?
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {

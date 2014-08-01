@@ -11,6 +11,7 @@ public class UpdateHandler {
     {
         String message = "EggyGoodness - Test Message";
         if(!event.player.getEntityWorld().isRemote) {
+//TODO Do a proper update check
             event.player.addChatMessage(new ChatComponentText(message));
         }
         LogHelper.info(message);

@@ -17,6 +17,7 @@ public class Recipes
     public static void init()
     {
         // Oredictionary Registrations
+//TODO Figure out / balance gold dust to nugget conversion
         OreDictionary.registerOre("nuggetGold", ModItems.goldDust);
         OreDictionary.registerOre("dustGold", ModItems.goldDust);
 
@@ -72,6 +73,7 @@ public class Recipes
 
     public static void removeRecipe(Item item)
     {
+//TODO Does this need to be looped?
         CraftingManager.getInstance().getRecipeList().remove(RecipeFinder.find(item));
     }
 }

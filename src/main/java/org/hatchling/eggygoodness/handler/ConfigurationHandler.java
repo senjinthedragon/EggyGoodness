@@ -22,7 +22,7 @@ public class ConfigurationHandler {
     private static void loadConfiguration()
     {
         Reference.CONFIG_OVERWRITE_VANILLA_RECIPES = configuration.getBoolean("overwriteVanillaRecipes", Configuration.CATEGORY_GENERAL, true, "Replace the vanilla Cake and Pumpkin Pie recipes with versions that use Raw Egg");
-
+//TODO Make golden eggs/chickens configurable
         if (configuration.hasChanged())
         {
             configuration.save();
