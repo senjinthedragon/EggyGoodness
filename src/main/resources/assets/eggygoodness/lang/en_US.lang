@@ -1,4 +1,7 @@
+# Creative Tabs
 itemGroup.eggygoodness=Eggy Goodness
+
+# Items
 item.eggygoodness:eggnog.name=Eggnog
 item.eggygoodness:eggSandwich.name=Egg Sandwich
 item.eggygoodness:friedDoubleYolkEgg.name=Fried Double-Yolk Egg
